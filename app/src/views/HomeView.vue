@@ -4,6 +4,6 @@ import Reservations from '../components/Reservations.vue'
 
 <template>
   <main>
-    <Reservations />
+    <Reservations/>
   </main>
 </template>

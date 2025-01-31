@@ -6,7 +6,7 @@ import FloorPlan from '../components/FloorPlan.vue'
   <div class="about">
     <FloorPlan/>
   </div>
-  
+
 </template>
 
 <style>

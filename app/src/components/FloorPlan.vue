@@ -1,13 +1,19 @@
 <template>
-    <div>
-        <h2 v-for="table in tables" :key="table">{{ table }}</h2>
+    <div class="">
+        <h2 v-for="table in tables" :key="table">{{ table.id }}</h2>
+        <h3 v-for="table in tables" :key="table">{{ table.status }}</h3>
+        <li v-for="table in tables">
+            
+        </li>
     </div>
 </template>
 
 <script setup>
-const tables = ['a1', 'a2', 'a3']
+const tables = [
+    {id:"1", status:"occupied"}
+]
+
 </script>
 
 <style scoped>
-
 </style>
