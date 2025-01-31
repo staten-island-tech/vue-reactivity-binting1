@@ -1,7 +1,12 @@
+<script setup>
+import FloorPlan from '../components/FloorPlan.vue'
+</script>
+
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <FloorPlan/>
   </div>
+  
 </template>
 
 <style>
