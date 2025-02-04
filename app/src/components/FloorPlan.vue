@@ -6,7 +6,7 @@
 
 <script setup>
 import tableCard from "../components/tableCard.vue"
-const tables = [
+const tables =  [
     {id:"1", status:"occupied"},
     {id:"2", status:"unoccupied"},
 ]

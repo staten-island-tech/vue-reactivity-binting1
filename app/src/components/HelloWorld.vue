@@ -1,4 +1,5 @@
 <script setup>
+import FloorPlan from '../components/FloorPlan.vue'
 defineProps({
   msg: {
     type: String,
@@ -11,8 +12,9 @@ defineProps({
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
     <h3>Welcome!</h3>
+    <FloorPlan/>
   </div>
-</template>
+  </template>
 
 <style scoped>
 h1 {
@@ -37,4 +39,6 @@ h3 {
     text-align: left;
   }
 }
+
+
 </style>
