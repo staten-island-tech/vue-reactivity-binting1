@@ -2,8 +2,7 @@
     <div class="container">
         <h2>{{ table.id }}</h2>
         <h2>{{ table.status }}</h2>
-        <RouterLink to="/">Reservations</RouterLink>
-
+        <button>register for spot</button>
     </div>
 </template>
 
