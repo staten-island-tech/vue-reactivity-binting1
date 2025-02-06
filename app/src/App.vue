@@ -9,14 +9,14 @@ import HelloWorld from './components/HelloWorld.vue'
     <div class="wrapper">
         <HelloWorld msg="Business Name"/>
     </div>
-  </header>
+
   
   <nav>
       <RouterLink to="/">Reservations</RouterLink>
   </nav>
 
   <RouterView/>
-
+  </header>
 </template>
 
 <style scoped>

@@ -14,7 +14,7 @@ defineProps({
     <h3>Welcome!</h3>
     <FloorPlan/>
   </div>
-  </template>
+</template>
 
 <style scoped>
 h1 {
