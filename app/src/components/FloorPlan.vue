@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <tableCard v-for="table in tables" :key="table.id"/>
+        <tableCard v-for="table in tables" :key="table.id" :table="table"/>
     </div> 
 </template>
 

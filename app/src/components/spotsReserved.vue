@@ -1,11 +1,13 @@
 <template>
     <div>
-    <p>this is about page</p>
+
     </div>
 </template>
 
 <script setup>
-
+const spots = [
+    {},
+]
 </script>
 
 <style scoped>

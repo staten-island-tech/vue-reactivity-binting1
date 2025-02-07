@@ -1,13 +1,13 @@
 <template>
   <div>
     <form action="submit" @submit.prevent="reserve">
-      <label for="username">username</label>
-      <input type="text" v-model='user.username'/>
+      <label for="table">table number</label>
+      <input type="text" v-model='reserve.username'/>
       <br>
-      <label for="password">password</label>
-      <input type="text" v-model='user.password'/>
+      <label for="guests">amount of guests</label>
+      <input type="text" v-model='reserve.password'/>
       <br>
-      <button>submit</button>
+      <button >submit</button>
     </form>
     <h2 v-if="loggedIn">hello</h2>
     <h2 v-else>please login</h2> 
@@ -16,11 +16,11 @@
 
 <script setup>
   import { reactive } from 'vue' //ref is for individual data, reactive is for arrays and objects
-  const user = reactive({username:'', password:''}) //should be together to define one user
-  function reserve(user){
-    console.log(user)
+  const reserve = reactive({table:'', guests:''}) //should be together to define one user
+  function vy(reserve){
+    console.log(reserve)
   }
-  reserve(user);
+  vy(reserve);
   const loggedIn = false; 
 
   //to render the data, use v-(word) in the template 
