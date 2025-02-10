@@ -1,5 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import FloorPlan from "./components/FloorPlan.vue"
 import HelloWorld from './components/HelloWorld.vue'
 </script>
 
@@ -10,7 +11,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <HelloWorld msg="Business Name"/>
     </div>
   </header>
-
+  <FloorPlan/>
   
 </template>
 
