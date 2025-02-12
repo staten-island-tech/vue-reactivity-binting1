@@ -1,9 +1,9 @@
 <script setup>
-import Reservations from '../components/Reservations.vue'
+import TableDetail from '../components/TableDetail.vue'
 </script>
 
 <template>
   <main>
-    <Reservations/>
+    <TableDetail/>
   </main>
 </template>

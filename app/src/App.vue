@@ -10,8 +10,9 @@ import HelloWorld from './components/HelloWorld.vue'
     <div class="wrapper">
         <HelloWorld msg="Business Name"/>
     </div>
+    <FloorPlan/>
+
   </header>
-  <FloorPlan/>
   
 </template>
 
