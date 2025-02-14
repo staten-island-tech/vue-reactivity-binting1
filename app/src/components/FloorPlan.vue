@@ -1,12 +1,12 @@
 <template>
     <div class="container">
-        <tableCard v-for="table in tables" :key="table.id" :table="table"/>
+        <tableCard @click="openPage(table)" v-for="table in tables" :key="table.id" :table="table">reserve</tableCard>
     </div> 
 </template>
 
 <script setup>
 import { ref } from 'vue';
-import { useRouter } from 'vue-router';
+import { lists } from './reservation.js';
 import tableCard from "../components/tableCard.vue";
 
 const tables = ref ([
@@ -15,11 +15,10 @@ const tables = ref ([
     {id:"3", status:"unoccupied"},
 ])
 
-const router = useRouter();
-
-const handleOpenDetail = (id) => {
-    router.push({name:'TableDetail', params: {id}});
+const openPage = (table) => {
+    list.cart.push(table)
 }
+
 
 </script>
 

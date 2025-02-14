@@ -3,12 +3,13 @@
         <h2>{{ table.id }}</h2>
         <h2>{{ table.status }}</h2>
         <button @click="count++" @submit.prevent="count"># of reserved spots: {{ count }}</button>
-        <br><button @click="openDetailPage">click to reserve</button>
+        <br><button @click="openDetailPage(tables)">click to reserve</button>
     </div>
 </template>
 
 <script setup>
 import { ref } from 'vue'
+import tables from '../components/FloorPlan.vue'
 defineProps ({
     table: Object,
     id: Number, 
@@ -17,10 +18,6 @@ defineProps ({
 });
 
 const count = ref(0)
-
-// function event () {
-//     spots.append()
-// }
 
 </script>
 
