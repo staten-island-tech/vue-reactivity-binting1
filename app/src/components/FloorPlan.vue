@@ -6,7 +6,6 @@
 
 <script setup>
 import { ref } from 'vue';
-import { lists } from './reservation.js';
 import tableCard from "../components/tableCard.vue";
 
 const tables = ref ([
