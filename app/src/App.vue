@@ -1,82 +1,56 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import FloorPlan from "./components/FloorPlan.vue"
-import HelloWorld from './components/HelloWorld.vue'
+import { RouterLink, RouterView } from 'vue-router';
+import TableCard from "./components/TableCard.vue";
+import HelloWorld from './components/HelloWorld.vue';
+import { tableData } from './tables.js';
 </script>
 
 <template>
   <header>
     <!-- <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" /> -->
-    <div class="wrapper">
-        <HelloWorld msg="Business Name"/>
-        <FloorPlan/>
+      <div class="wrapper">
+        <img alt="herbs" src="@/assets/herbs.jpg" width="500" height="300"/>
+        <HelloWorld msg="Forestry Eats"/>
       </div>
-
+      <div class="cards">
+        <TableCard v-for="table in tableData.tables" :key="table.id" :table="table" />
+      </div>
   </header>
-
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-  max-height: 20vh;
-
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
+.header {
+  background-color: #007BFF;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
   text-align: center;
-  margin-top: 2rem;
+  font-size: 24px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+  margin-top: 20px;
 }
 
 @media (min-width: 1024px) {
   header {
-    display: flex;
+    display: grid;
     place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+    padding: 20px;
   }
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
+} 
 
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
+img {
+  max-width: 100%;
+  max-height: 100%;
 }
 </style>

@@ -10,12 +10,6 @@ const router = createRouter({
       name: 'home',
       component: HomeView,
     },
-    {
-      path: '/table/:id',
-      name: 'TableDetail',
-      component: TableDetail,
-    },
-    
   ],
 })
 
