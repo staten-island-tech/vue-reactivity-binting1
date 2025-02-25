@@ -1,6 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router';
-import TableCard from "./components/TableCard.vue";
+import TableCard from './components/Table.vue';
 import HelloWorld from './components/HelloWorld.vue';
 import { tableData } from './tables.js';
 </script>
