@@ -9,8 +9,8 @@ import { tableData } from './tables.js';
   <header>
     <!-- <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" /> -->
       <div class="wrapper">
-        <img alt="herbs" src="@/assets/herbs.jpg" width="500" height="300"/>
-        <HelloWorld msg="Forestry Eats"/>
+        <img alt="herbs" src="@/assets/buffet.png" width="800" height="300"/>
+        <HelloWorld msg="Flaming Grill & Modern Buffet"/>
       </div>
       <div class="cards">
         <TableCard v-for="table in tableData.tables" :key="table.id" :table="table" />
@@ -20,7 +20,7 @@ import { tableData } from './tables.js';
 
 <style scoped>
 .header {
-  background-color: #007BFF;
+  background-color: #67aaf1;
   color: white;
   display: flex;
   justify-content: center;

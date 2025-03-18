@@ -1,6 +1,7 @@
 <template>
     <div class="container">
-        <h2>Table {{ table.id }}: {{ table.occupied }}</h2>
+        <h2>Table {{ table.id }} Occupied: </h2>
+        <h1>{{ table.occupied ? 'Occupied' : 'Empty' }}</h1>
         <button># of reserved spots: {{ count }}</button>
         <br><button @click="openPage">click to reserve</button>
         <TableDetail @submit="submitted" :table="table" v-show="show"></TableDetail>
@@ -27,6 +28,8 @@ const openPage = () => {
     show.value = true;
 }
 
+
+
 function submitted(reserve, id) {
   const table = tableData.tables.find((table) => table.id === id);
   if (table) {
@@ -34,6 +37,7 @@ function submitted(reserve, id) {
     count.value++
 }   
 }
+
 </script>
 
 <style scoped>
@@ -55,6 +59,12 @@ function submitted(reserve, id) {
     text-align: center;
 }
 
+h1 {
+    color: red; 
+    font-weight: bold;
+    text-align: center;
+    
+}
 h2 {
     color: green; 
     font-weight: bold;
@@ -63,7 +73,7 @@ h2 {
 button {
     margin: 10px 0;
     padding: 10px 20px;
-    background-color: #00bd7e;
+    background-color: #db2e2e;
     color: white;
     border: none;
     border-radius: 5px;
@@ -73,7 +83,7 @@ button {
 }
 
 button:hover {
-    background-color: #029766;
+    background-color: #db2e2e;
 }
 
 @media (max-width:1500px) {

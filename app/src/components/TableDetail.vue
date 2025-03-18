@@ -85,13 +85,13 @@ form input {
 }
 
 form input:focus {
-  border-color: #02804b;
+  border-color: #c44040;
   outline: none;
 }
 
 form button {
   padding: 12px;
-  background-color: #00bd7e;
+  background-color: #db2e2e;
   color: white;
   border-radius: 5px;
   border: none;
